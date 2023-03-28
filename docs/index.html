@@ -45,7 +45,9 @@
       .socials a{
         text-decoration: none;
         color: #A9C2A4;
-        font-family: 'Space Mono', monospace;
+        -webkit-box-shadow: -1px -1px 28px 5px rgba(55,99,72,1);
+        -moz-box-shadow: -1px -1px 28px 5px rgba(55,99,72,1);
+        box-shadow: -1px -1px 28px 5px rgba(55,99,72,1);
       }
 
       .socials {
@@ -70,7 +72,12 @@
 
         -webkit-box-shadow: -1px -1px 28px 5px rgba(55,99,72,1);
         -moz-box-shadow: -1px -1px 28px 5px rgba(55,99,72,1);
-        box-shadow: -1px -1px 28px 5px rgba(55,99,72,1); 
+        box-shadow: -1px -1px 28px 5px rgba(55,99,72,1);
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .link:hover {
+        transform: translateY(-5px);
       }
 
       .items {
@@ -84,6 +91,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
   </head>
   <body>
     <div class="items">
@@ -97,12 +105,12 @@
 
       <div class="socials">
         <a href="https://github.com/allyntechprep" target="_blank">
-          Github
+          <i class="fa-brands fa-github fa-lg"></i>
         </a>
 
         <div class="socials">
           <a href="https://www.linkedin.com/in/allyn-mckinney-549619212/" target="_blank">
-            Linked
+            <i class="fa-brands fa-linkedin fa-lg"></i>
           </a>
         </div>
       </div>
